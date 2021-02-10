@@ -1,0 +1,227 @@
+﻿body {
+    /*background-color: #C1EDFF;*/
+    /*background-color: white;*/
+    background-color: #FBF9FB;
+    font-family: 'Assistant', sans-serif;
+}
+
+iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#gameArea {
+    overflow: hidden;
+    position: relative;
+    height: 93vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 26%, rgba(233, 233, 233, 1) 54%, rgba(171, 171, 171, 1) 100%);
+    width: 100%;
+    height: 50px;
+    position: relative;
+    direction: rtl;
+    display: block;
+    z-index: 3;
+    box-shadow: -3px 1px 7px -1px rgb(0 0 0 / 60%);
+}
+
+
+/*כותרת משחק*/
+
+header>a>p {
+    font-family: 'Assistant', sans-serif;
+    font-size: 18pt;
+    font-weight: 600;
+    position: relative;
+    top: -16px;
+    color: black;
+    display: inline-block;
+    direction: rtl;
+    text-decoration: none;
+    color: #3C1C58;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*לוגו*/
+
+#logo {
+    width: 35px;
+    height: 35px;
+    padding: 5px 15px;
+    direction: rtl;
+}
+
+nav {
+    margin-top: -86px;
+    margin-left: 10px;
+    direction: rtl;
+}
+
+nav ul {
+    list-style: none;
+    direction: rtl;
+}
+
+nav ul li {
+    display: inline-block;
+    float: left;
+    direction: rtl;
+}
+
+nav ul li a {
+    display: block;
+    color: #3C1C58;
+    text-align: center;
+    padding: 3px 10px;
+    font-weight: 400;
+    font-size: 15pt;
+    font-family: 'Assistant', sans-serif;
+    direction: rtl;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Assistant', sans-serif;
+    direction: rtl;
+    text-decoration: none;
+}
+
+.popUp {
+    /* background-color: white; */
+    width: 1000px !important;
+    position: fixed;
+    top: 60px;
+    z-index: 4;
+    text-align: center;
+    width: 700px;
+    border-radius: 25px;
+    padding: 10px;
+    padding-bottom: 25px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    direction: rtl;
+    /* border: 1px solid black; */
+}
+
+.popUp::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 1366px;
+    height: 768px;
+    display: inline-block;
+    position: absolute;
+    top: -9px;
+    left: -173px;
+}
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+#myodotX {
+    z-index: 10;
+    cursor: pointer;
+    width: 70px;
+    position: absolute;
+    top: 63px;
+    left: 3px;
+}
+
+#howTo {
+    position: absolute;
+    left: -30px;
+    top: 40px;
+}
+
+@-webkit-keyframes bounceInDown {
+    0%,
+    60%,
+    75%,
+    90%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInDown {
+    0%,
+    60%,
+    75%,
+    90%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
