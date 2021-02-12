@@ -1,8 +1,9 @@
-﻿body {
+body {
     /*background-color: #C1EDFF;*/
     /*background-color: white;*/
     background-color: #FBF9FB;
     font-family: 'Assistant', sans-serif;
+    overflow-y: hidden;
 }
 
 iframe {
@@ -108,19 +109,20 @@ nav ul li a:hover {
 
 .popUp {
     /* background-color: white; */
-    width: 1000px !important;
+    width: 100% !important;
+    height: 100% !important;
     position: fixed;
-    top: 60px;
+    /* top: 60px; */
     z-index: 4;
     text-align: center;
     width: 700px;
-    border-radius: 25px;
-    padding: 10px;
-    padding-bottom: 25px;
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
+    /* border-radius: 25px; */
+    /* padding: 10px; */
+    /* padding-bottom: 25px; */
+    /* right: 0; */
+    /* left: 0; */
+    /* margin-right: auto; */
+    /* margin-left: auto; */
     direction: rtl;
     /* border: 1px solid black; */
 }
@@ -128,12 +130,12 @@ nav ul li a:hover {
 .popUp::before {
     content: "";
     background-color: rgba(0, 0, 0, 0.7);
-    width: 1366px;
-    height: 768px;
+    height: 100%;
+    width: 100%;
     display: inline-block;
-    position: absolute;
-    top: -9px;
-    left: -173px;
+    position: relative;
+    top: 0px;
+    /* left: -173px; */
 }
 
 .bounceInDown {
@@ -150,14 +152,31 @@ nav ul li a:hover {
     cursor: pointer;
     width: 70px;
     position: absolute;
-    top: 63px;
-    left: 3px;
+    top: 9%;
+    left: 48%;
 }
 
 #howTo {
     position: absolute;
-    left: -30px;
-    top: 40px;
+    left: 24.5%;
+    top: 17%;
+}
+
+#faculta img {
+    position: relative;
+    z-index: 11;
+    top: -41%;
+    right: 4.5%;
+    width: 13%;
+}
+
+#faculta span {
+    color: rgb(0 136 255);
+    position: relative;
+    z-index: 11;
+    top: -38%;
+    right: -7%;
+    text-decoration: revert;
 }
 
 @-webkit-keyframes bounceInDown {
