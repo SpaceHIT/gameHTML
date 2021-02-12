@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
 body {
-    /*background-color: #C1EDFF;*/
-    /*background-color: white;*/
     background-color: #FBF9FB;
     font-family: 'Assistant', sans-serif;
     overflow-y: hidden;
+    margin: 0px;
 }
 
 iframe {
@@ -18,7 +18,7 @@ iframe {
 #gameArea {
     overflow: hidden;
     position: relative;
-    height: 93vh;
+    height: 80vh;
     width: 90vw;
     margin: 0 auto;
 }
@@ -244,3 +244,5 @@ nav ul li a:hover {
         transform: none;
     }
 }
+
+@media gameArea {}
